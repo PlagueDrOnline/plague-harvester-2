@@ -1,0 +1,39 @@
+.plague-harvester {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    background: #0d0d0d;
+    color: #f5f5dc;
+    border-radius: 8px;
+}
+
+.plague-harvester .header img {
+    width: 60px;
+    height: 60px;
+}
+
+.plague-harvester .tabs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.plague-harvester .tab-button {
+    background: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.plague-harvester .tab-button.active {
+    background: #ff8c00;
+}
+
+.plague-harvester .tab-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 4px;
+}
