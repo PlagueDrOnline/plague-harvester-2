@@ -14,7 +14,7 @@ class Plague_Harvester_Scheduler {
     }
 
     public function run_harvest_cycle($target_url) {
-        $crawler  = new Plague_Harvester_Crawler();
+        $crawler = new Plague_Harvester_Crawler();
         $importer = new Plague_Harvester_Importer();
 
         $data = $crawler->crawl($target_url);

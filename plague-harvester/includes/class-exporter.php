@@ -34,11 +34,9 @@ class Plague_Harvester_Exporter {
 
         $output = fopen('php://temp', 'r+');
         fputcsv($output, array_keys(reset($data)));
-
         foreach ($data as $row) {
             fputcsv($output, $row);
         }
-
         rewind($output);
         $csv = stream_get_contents($output);
         fclose($output);
